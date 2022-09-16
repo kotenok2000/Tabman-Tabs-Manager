@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <title>Tabman</title>
+  <link rel="stylesheet" type="text/css" href="../styles/app.css">
+</head>
+<body class="theme-modern">
+
+<div id="main">
+  <div class="header" id="header">
+    <div class="btns-region">
+      <button id="toggleSearchBtn" class="btn btn-search" title="Search"><i class="icon icon-search"></i></button>
+    </div>
+    <button id="menuBtn" class="btn btn-menu" data-dropdown="#dropdownMenu" data-horizontal-offset="6"
+            data-vertical-offset="0" title="Menu"><i class="icon icon-more-vert"></i></button>
+    <div id="dropdownMenu" class="dropdown dropdown-tip dropdown-anchor-right">
+      <!--<ul class="dropdown-menu"></ul>-->
+    </div>
+    <button class="btn btn-dock" title="Dock"><i class="icon icon-dock"></i></button>
+    <h1><span id="tabsCountBound" class="tabs-count" data-bind="filterer.length"></span></h1>
+  </div>
+  <div class="filter-box"></div>
+</div>
+
+<script src="/bundles/app.js"></script>
+
+</body>
+</html>
+
